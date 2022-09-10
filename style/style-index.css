@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@300&display=swap');
+
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color:rgb(250, 248, 244);
+    font-size: 25px;
+    text-align: start;
+    height: 100%;
+    overflow-x: hidden;
+}
+nav{
+    background-color:rgb(250, 248, 244);
+}
+nav img{
+    width: 150px;
+    height: 80px;
+}
+.intro{
+    margin-top: 20px;
+    justify-items:center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.intro2{
+    margin-top: 20px;
+    justify-items:center;
+    justify-content: center;
+    padding-top: 100px;
+}
+.intro p{
+    font-size: 25px;
+    text-align: start;
+
+}
+.intro img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+h1::after{
+    width: 80px;
+    height: 1px;
+    display: block;
+    background-color: black;
+    content: '';
+    border-radius: 10px;
+}
+h1{
+    text-align: start;
+    margin-bottom: 25px;
+}
+h4{
+    text-align: start;
+    margin-bottom: 35px;
+    margin-left: 20px;
+}
+h4::after{
+    width: 8px;
+    height: 8px;
+    display: block;
+    content: '';
+    margin-left: -20px;
+    margin-top: -20px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.estudos p{
+    font-size: 25px;
+    text-align: start;
+}
+.estudos{
+    margin-top: 25px;
+    justify-items:center;
+    justify-content: center;
+    padding-top: 40px;
+}
+ul{
+    margin-left: -30px;
+}
+header li{
+    display: inline;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none; 
+    font-style: none;
+    list-style-type: none;
+    font-size: 18px;
+}
+header a:link {
+    color: white;
+    text-decoration: none;
+ }
+header a:visited {
+    color: white;
+    text-decoration: none;
+ }
+header a:hover{
+    text-decoration:underline;
+ }
+.header-top{
+    margin-top: 0;
+    width: 100%;
+    height: 60px;
+    z-index:1;
+    padding-top: 8px;
+    text-align: center;
+    justify-content: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+    background-color: rgb(29, 29, 29);
+}
+.header-fixed{
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    z-index:1;
+    padding-top: 8px;
+    text-align: center;
+    justify-content: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+    background-color: rgb(29, 29, 29);
+}
+.inicio{
+    width:100%;
+    height: 80vh;
+    background-color: #8c1ef3;
+    background-image: linear-gradient(to left,#b80505, #B721FF, rgb(0, 165, 187));
+    position: relative;
+    background-size: 500% 100%;
+    animation: degrade-animado 10s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+.inicio h2{
+    font-size: 60px;
+    color:white;   
+}
+.inicio h2::after{
+    content: "por Lucas Gabriel";
+    font-size: 15px;
+    display: block;
+    margin-left: 120px;
+    margin-top: -10px; 
+}
+.portifolio{
+    margin-top: 50px;
+    scroll-snap-align: start;
+    justify-items:center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.portifolio p{
+    font-size: 25px;
+    text-align: center;
+}
+.portifolio h3{
+    text-align: center;
+    font-size: 200%;
+    padding-bottom: 20px;
+}
+button{
+    background-color: #B721FF;
+    color: white;
+    border: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 40px;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: relative;
+}
+button:hover{
+    background-color: #52abffef;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    border: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 40px;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+footer{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Dosis', sans-serif;
+    padding-top: 30px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    background-color: black;
+}
+footer a:link {
+    color: white;
+    text-decoration: none;
+ }
+footer a:visited {
+    color: white;
+    text-decoration: none;
+ }
+footer a:hover{
+    text-decoration:underline;
+ }
+footer img{
+    width: 200px;
+    padding-top: 50px;
+ }
+ .diretos{
+    padding-top: 20px;
+    font-size: 10px;
+    color: #8c1ef3;
+ }
+.footerMeio h5{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+ }
+.footerMeio p{
+    line-height: 15px;
+    padding-left: 20px;
+ }
+ .footerMeio{
+    font-size: 18px;
+    padding-right: 20px;
+ }
+ .footerRight{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 20px;
+ }
+ .copyright{
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+ .estudos img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+ }
+
