@@ -37,12 +37,11 @@ header a:hover{
  }
 .header-top{
     margin-top: 0;
-    width: 100%;
+    width: 99%;
     height: 60px;
     z-index:1;
     padding-top: 8px;
     text-align: center;
-    justify-content: center;
     justify-content: center;
     display: flex;
     font-family: 'Dancing Script', cursive;

@@ -6,16 +6,29 @@ body{
     background-color:rgb(250, 248, 244);
     font-size: 25px;
     text-align: start;
-    height: 100%;
+    max-width: 100%;
     overflow-x: hidden;
 }
-nav{
-    background-color:rgb(250, 248, 244);
-}
-nav img{
-    width: 150px;
-    height: 80px;
-}
+@media only screen and (max-width: 400px) {
+    .intro img{
+        width: 250px;
+        height: 250px;
+    }
+    .estudos img{
+        width: 250px;
+        height: 250px;
+     }
+  }
+@media only screen and (min-width: 401px) {
+    .intro img{
+        width: 350px;
+        height: 350px;
+    }
+    .estudos img{
+        width: 350px;
+        height: 350px;
+     }
+  }
 .inicio h2:hover{
     text-shadow: 0px 0px 15px white;
     color:white; 
@@ -38,11 +51,6 @@ nav img{
     font-size: 25px;
     text-align: start;
 
-}
-.intro img{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
 }
 h1::after{
     width: 80px;
@@ -111,7 +119,6 @@ header a:hover{
     padding-top: 8px;
     text-align: center;
     justify-content: center;
-    justify-content: center;
     display: flex;
     font-family: 'Dancing Script', cursive;
     font-family: 'Dosis', sans-serif;
@@ -125,7 +132,6 @@ header a:hover{
     z-index:1;
     padding-top: 8px;
     text-align: center;
-    justify-content: center;
     justify-content: center;
     display: flex;
     position: fixed;
@@ -273,9 +279,4 @@ footer img{
     padding-bottom: 20px;
  }
 
- .estudos img{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
- }
 
