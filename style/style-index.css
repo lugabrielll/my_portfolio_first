@@ -3,6 +3,8 @@
 
 body{
     font-family: 'Dancing Script', cursive;
+    font-family: 'Dosis', sans-serif;
+    /* font-family: 'Dancing Script', cursive; */
     background-color:rgb(250, 248, 244);
     font-size: 25px;
     text-align: start;
@@ -10,6 +12,7 @@ body{
     overflow-x: hidden;
 }
 @media only screen and (max-width: 400px) {
+    
     .intro img{
         width: 250px;
         height: 250px;
@@ -29,12 +32,6 @@ body{
         height: 350px;
      }
   }
-.inicio h2:hover{
-    text-shadow: 0px 0px 15px white;
-    color:white; 
-    transition: 1s;
-    font-size: 60px;
-}
 .intro{
     margin-top: 20px;
     justify-items:center;
@@ -48,46 +45,130 @@ body{
     padding-top: 100px;
 }
 .intro p{
-    font-size: 25px;
-    text-align: start;
+    font-size: 22px;
+    text-align: justify;
+    padding: 0 15px 0 15px;
 
 }
-h1::after{
-    width: 80px;
-    height: 1px;
-    display: block;
-    background-color: black;
-    content: '';
-    border-radius: 10px;
-}
 h1{
-    text-align: start;
-    margin-bottom: 25px;
-}
-h4{
-    text-align: start;
+    text-align: center;
     margin-bottom: 35px;
-    margin-left: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration:underline;  
 }
-h4::after{
-    width: 8px;
-    height: 8px;
-    display: block;
-    content: '';
-    margin-left: -20px;
-    margin-top: -20px;
-    border: 2px solid black;
-    border-radius: 50px;
+.estudos h1{
+    text-align: center;
+    margin-bottom: -40px;
+    font-weight: bold;
 }
+@media only screen and (max-width: 720px){
+    .inicio h2:hover{
+        text-shadow: 0px 0px 15px white;
+        color:white; 
+        transition: 1s;
+        font-size: 60px;
+    }
+    .inicio h2{
+        font-size: 60px;
+        color:white;
+        transition: 2s;   
+    }
+    .inicio h2::after{
+        content: "por Lucas Gabriel";
+        font-size: 15px;
+        display: block;
+        margin-left: 120px;
+        margin-top: -10px; 
+    }
+    .inicio{
+        width:100%;
+        height: 80vh;
+        background-color: #8c1ef3;
+        background-image: linear-gradient(to left,#b80505, #B721FF, rgb(0, 165, 187));
+        position: relative;
+        background-size: 500% 100%;
+        font-family: 'Dancing Script', cursive;
+        animation: degrade-animado 10s infinite alternate;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+}
+@media only screen and (min-width: 721px){
+    .inicio h2:hover{
+        text-shadow: 0px 0px 15px white;
+        color:white; 
+        transition: 1s;
+        font-size: 80px;
+    }
+    .inicio h2{
+        font-size: 80px;
+        color:white;
+        transition: 2s;   
+    }
+    .inicio h2::after{
+        content: "por Lucas Gabriel";
+        font-size: 20px;
+        display: block;
+        margin-left: 170px;
+        margin-top: -10px; 
+    }
+    .inicio{
+        width:100%;
+        height: 80vh;
+        background-color: #8c1ef3;
+        background-image: linear-gradient(to left,#b80505, #B721FF, rgb(0, 165, 187));
+        position: relative;
+        background-size: 500% 100%;
+        font-family: 'Dancing Script', cursive;
+        animation: degrade-animado 10s infinite alternate;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h4{
+        
+            text-align: start;
+            font-weight: bold;
+            width: 30px;
+            font-size: 25px;
+            margin-left: 40px;
+            margin-bottom: 35px;
+    }
+        h4::after{
+            width: 8px;
+            height: 8px;
+            display: block;
+            content: '';
+            margin-left: -20px;
+            margin-top: -20px;
+            border: 2px solid black;
+            border-radius: 50px;
+        }
+    }
+
 .estudos p{
-    font-size: 25px;
-    text-align: start;
+    font-size: 22px;
+    text-align: justify;
+    padding: 0 15px 0 15px;
 }
 .estudos{
     margin-top: 25px;
     justify-items:center;
     justify-content: center;
     padding-top: 40px;
+}
+.estudos2{
+    margin-top: -60px;
 }
 ul{
     margin-left: -30px;
@@ -140,20 +221,7 @@ header a:hover{
     letter-spacing: 1px;
     background-color: rgb(29, 29, 29);
 }
-.inicio{
-    width:100%;
-    height: 80vh;
-    background-color: #8c1ef3;
-    background-image: linear-gradient(to left,#b80505, #B721FF, rgb(0, 165, 187));
-    position: relative;
-    background-size: 500% 100%;
-    animation: degrade-animado 10s infinite alternate;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-}
+
 @keyframes degrade-animado {
     0%{
         background-position-x: 0%;
@@ -162,24 +230,13 @@ header a:hover{
         background-position-x: 100%;
     }
 }
-.inicio h2{
-    font-size: 60px;
-    color:white;
-    transition: 2s;   
-}
-.inicio h2::after{
-    content: "por Lucas Gabriel";
-    font-size: 15px;
-    display: block;
-    margin-left: 120px;
-    margin-top: -10px; 
-}
 .portifolio{
-    margin-top: 50px;
+    margin-top: -40px;
     scroll-snap-align: start;
     justify-items:center;
     align-items: center;
     text-align: center;
+    font-family: 'Dancing Script', cursive;
     justify-content: center;
     padding-top: 40px;
     background-color: rgb(29, 29, 29);
